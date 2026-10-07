@@ -15,7 +15,18 @@ android {
         versionName = "1.1"
     }
 
+    // One fixed signing key, so every new build installs as an update over the old one.
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("tradelock.keystore")
+            storePassword = "tradelock"
+            keyAlias = "tradelock"
+            keyPassword = "tradelock"
+        }
+    }
+
     buildTypes {
+        debug { signingConfig = signingConfigs.getByName("debug") }
         release { isMinifyEnabled = false }
     }
     compileOptions {
