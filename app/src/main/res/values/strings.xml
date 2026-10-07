@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TradeLock</string>
+    <string name="widget_label">TradeLock – Block now</string>
+    <string name="accessibility_description">TradeLock watches which app is on screen so it can close MT5 (and any other app you choose) while you are locked out. It does not read or store anything you type or view.</string>
+</resources>
